@@ -1,16 +1,16 @@
 {
   "name": "redreconx_final_stack",
   "version": "1.0.0",
+  "description": "RedReconX – Offensive Security Portfolio",
   "main": "index.js",
   "scripts": {
-  "dev": "astro dev",
-  "build": "astro build",
-  "preview": "astro preview"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["astro", "cybersecurity", "portfolio", "red team"],
+  "author": "Umakanth (RedReconX)",
+  "license": "MIT",
   "dependencies": {
     "astro": "^5.7.14"
   }
