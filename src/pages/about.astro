@@ -1,9 +1,10 @@
 ---
-layout: ../layouts/BaseLayout.astro
-title: "About Me – RedReconX"
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = "About Me – RedReconX";
 ---
 
-<section class="py-12 max-w-4xl mx-auto text-gray-300">
+<BaseLayout title={title}>
+  <section class="py-12 max-w-4xl mx-auto text-gray-300">
   <h1 class="text-3xl font-bold mb-4 text-white">About Me</h1>
   <p class="mb-4">
     I'm Umakanth, an ethical hacker and red team enthusiast based in Hyderabad, India. With over 2.7 years of experience in IT support and a strong foundation in Windows and Linux systems, I've transitioned into the offensive side of cybersecurity to master real-world attack techniques, malware development, and red team operations.
@@ -18,3 +19,5 @@ title: "About Me – RedReconX"
     Certifications: CEH | Post Graduate Program in Cybersecurity (Great Lakes) | Currently focusing on CRTO/OSCP-level expertise.
   </p>
 </section>
+
+</BaseLayout>
