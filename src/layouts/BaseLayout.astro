@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <header class="p-4 bg-gray-800">
+      <nav class="flex justify-between">
+        <a href="/" class="text-xl font-bold text-red-500">RedReconX</a>
+        <div class="space-x-4">
+          <a href="/about" class="hover:underline">About</a>
+          <a href="/services" class="hover:underline">Services</a>
+          <a href="/blog" class="hover:underline">Blog</a>
+          <a href="/contact" class="hover:underline">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main class="container mx-auto px-4">
+      {children}
+    </main>
+    <footer class="text-center py-6 text-gray-400 text-sm">
+      &copy; 2025 RedReconX – Built with Astro & Cloudflare
+    </footer>
+  </body>
+</html>
