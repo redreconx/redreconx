@@ -1,10 +1,19 @@
 ---
-layout: ../layouts/BaseLayout.astro
-title: "RedReconX – Offensive Security Portfolio"
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = "RedReconX – Offensive Security Portfolio";
 ---
 
-<section class="text-center py-16">
-  <h1 class="text-4xl font-bold text-white">Welcome to RedReconX</h1>
-  <p class="mt-4 text-lg text-gray-300">Personal brand, projects, and services by Umakanth – aspiring red teamer and cybersecurity researcher.</p>
-  <a href="/contact" class="mt-6 inline-block bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700">Hire Me</a>
-</section>
+<BaseLayout title={title}>
+  <section class="py-16 text-center text-gray-300 max-w-4xl mx-auto">
+    <h1 class="text-5xl font-bold mb-4 text-white">RedReconX</h1>
+    <p class="text-lg mb-6">
+      Offensive Security | Ethical Hacking | Red Teaming | Cyber Reconnaissance
+    </p>
+    <div class="space-x-4">
+      <a href="/about" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-white">About Me</a>
+      <a href="/services" class="bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded text-white">Services</a>
+      <a href="/hire" class="bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded text-white">Hire Me</a>
+    </div>
+  </section>
+</BaseLayout>
+
