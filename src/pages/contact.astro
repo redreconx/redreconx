@@ -1,9 +1,10 @@
 ---
-layout: ../layouts/BaseLayout.astro
-title: "Contact – RedReconX"
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = ""Contact – RedReconX"";
 ---
 
-<section class="py-12 max-w-3xl mx-auto text-gray-300">
+<BaseLayout title={title}>
+  <section class="py-12 max-w-3xl mx-auto text-gray-300">
   <h1 class="text-3xl font-bold mb-6 text-white">Let's Talk</h1>
   <p class="mb-4">
     Got a project in mind? Want to collaborate, consult, or hire me? Use the form below — I'll get back to you shortly.
@@ -28,3 +29,5 @@ title: "Contact – RedReconX"
     <button type="submit" class="bg-red-600 px-6 py-2 text-white font-semibold rounded hover:bg-red-700">Send Message</button>
   </form>
 </section>
+
+</BaseLayout>

@@ -1,23 +1,27 @@
 ---
-layout: ../layouts/BaseLayout.astro
-title: "Hire Me – RedReconX"
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = "Hire Me – RedReconX";
 ---
 
-<section class="py-12 max-w-4xl mx-auto text-gray-300">
-  <h1 class="text-3xl font-bold mb-4 text-white">Why Hire Me?</h1>
-
-  <p class="mb-4">
-    I bring a hybrid of technical support experience and cutting-edge offensive security skills. If you're hiring for a red teamer, penetration tester, or SOC with offensive mindset — I’m your guy.
-  </p>
-
-  <ul class="list-disc pl-6 mb-6">
-    <li>2.7+ years in IT support (Windows, Server, Patch Management)</li>
-    <li>Certified CEH + Postgraduate in Cybersecurity</li>
-    <li>Proficient in tools like Burp Suite, Metasploit, BloodHound, Cobalt Strike, PowerShell, Python, Wireshark</li>
-    <li>Published offensive research, CTF writeups, and tool showcases on RedReconX</li>
-    <li>Fluent with Active Directory attacks, privilege escalation, and EDR evasion</li>
-  </ul>
-
-  <a href="/resume.pdf" class="inline-block bg-red-600 px-6 py-2 text-white rounded hover:bg-red-700">📄 Download Resume</a>
-  <a href="/contact" class="ml-4 inline-block text-red-400 underline hover:text-red-300">📬 Contact Me</a>
-</section>
+<BaseLayout title={title}>
+  <section class="py-12 max-w-4xl mx-auto text-gray-300">
+    <h1 class="text-3xl font-bold mb-6 text-white">Hire Me</h1>
+    <p class="mb-4">
+      I’m open to freelance red teaming, penetration testing, and offensive security consulting. Whether it’s a CTF-like challenge, enterprise recon, or evasion research, I bring creativity and stealth to the table.
+    </p>
+    <p class="mb-4">
+      I specialize in:
+    </p>
+    <ul class="list-disc pl-5 space-y-2 mb-4">
+      <li>Web App Pentesting (OWASP, custom recon)</li>
+      <li>Red Team Simulations & Adversary Emulation</li>
+      <li>Malware Development & Payload Obfuscation</li>
+      <li>Windows Privilege Escalation Labs / Setup</li>
+      <li>Stealthy Enumeration & Post-Exploitation Automation</li>
+    </ul>
+    <p class="mb-4">
+      If you're looking for someone to push the limits of offense ethically — <strong>I'm your guy</strong>.
+    </p>
+    <a href="/contact" class="text-red-400 underline">Get in touch</a>
+  </section>
+</BaseLayout>
